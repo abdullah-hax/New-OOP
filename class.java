@@ -1,5 +1,0 @@
-package newOOP;
-
-public it {
-    
-}
