@@ -8,18 +8,39 @@ class Vehicle {
     }
 
     public void move(){
-        System.out.println("vehicle is moving");
+        System.out.println("Vehicle is moving");
+    }
+}
+
+class Car extends Vehicle{
+    private String brand;
+
+    public Car(int speed, String brand){
+        super(speed);
+        this.brand = brand;
+    }
+
+    public void honk(){
+        System.out.println("Car is honking");
+    }
+
+    @Override
+    public void move(){
+        System.out.println("Car is moving at speed " + speed);
     }
 }
 
 public class InheritanceMain {
     public static void main(String[] args) {
-        
+        Car car = new Car(120, "Prado");
+
+        car.move();
+        car.honk();
     }
 }
 
 
-/* //   ?this() = nijer objecter constructor call
+/* //   ?this() = nij objecter constructor call
         ?super() = paranter objecter constructor call
 Object obj = new Object(); => 
         ?new Object() = mention kora objecter constructor call */
