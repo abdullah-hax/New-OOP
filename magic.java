@@ -18,5 +18,3 @@ public class magic {
         A a1 = new A();
     }
 }
-
-//Java: Clean Java Language Server Workspace

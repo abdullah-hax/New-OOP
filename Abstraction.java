@@ -109,3 +109,6 @@ public class Abstraction {
 “Abstraction hides implementation details and shows only essential features. In Java, abstraction is achieved using abstract classes and abstract methods.” 
 Example: Remote controller, Android, TV, Laptop etc.
 */
+
+
+

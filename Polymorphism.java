@@ -6,7 +6,7 @@
     Parent reference → child object লাগবে
     এই ৩টা না থাকলে polymorphism নাই। 
 
-Inheritance + overriding + parent reference — এটাই polymorphism */
+Inheritance + overriding + parent reference → runtime polymorphism */
 
 
 package newOOP;

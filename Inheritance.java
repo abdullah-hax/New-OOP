@@ -30,7 +30,7 @@ class Car extends Vehicle{
     }
 }
 
-public class InheritanceMain {
+public class Inheritance {
     public static void main(String[] args) {
         Car car = new Car(120, "Prado");
 

@@ -1,6 +1,8 @@
 package newOOP;
 
-//-------------------------------------------------------
+//Java: Clean Java Language Server Workspace
+
+//? -------------------------------------------------------
 /*  Engine engine1;          // শুধু নাম + টাইপ
     engine1 = new Engine();  // আসল object
  
@@ -15,7 +17,7 @@ engine1 = new Engine();
     → heap এ Engine object
     → reference এখন সেই object-কে point করছে */
 
-//-------------------------------------------------------
+//? -------------------------------------------------------
 
 /* - extends means প্রসারিত করা , তবে java তে অন্তর্ভুক্ত অর্থে ব্যবহৃত হবে 
 
@@ -37,7 +39,12 @@ engine1 = new Engine();
         example: class Bank implements Transfer, SaveGold
                  class Uber implements Riding
                  Father implements Business, Cooking, Journey 
-                 
+
                 (Listening -> Shadowing -> //@ Juggling)
 
         Interface, inheretance না  */
+
+//? -------------------------------------------------------
+
+/*  Inheritance + overloading → compile-time polymorphism
+    Inheritance + overriding + parent reference → runtime polymorphism */
