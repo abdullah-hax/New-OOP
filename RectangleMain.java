@@ -21,6 +21,8 @@ class Rectangle {
             this.length = length;
             this.width = width;
         } else {
+
+            System.out.println("Invalid Rectangle side value . Setting value to 1, 1");
             this.length = 1;
             this.width = 1;
         }
@@ -44,12 +46,15 @@ class Rectangle {
 public class RectangleMain {
     public static void main(String[] args) {
         Rectangle rectangle1 = new Rectangle(7, 8);
-        Rectangle rectangle2 = new Rectangle(10);
-        Rectangle rectangle3 = new Rectangle();
+        System.out.println("Area of Rectangle 1: " + rectangle1.area());
 
-        System.out.println("Area of rectangle 1: " + rectangle1.area());
-        System.out.println("Area of rectangle 2: " + rectangle2.area());
-        System.out.println("Area of rectangle 3: " + rectangle3.area());
+        Rectangle rectangle2 = new Rectangle(0);
+        System.out.println("Area of Rectangle 2: " + rectangle2.area());
+        
+        Rectangle rectangle3 = new Rectangle();
+        System.out.println("Area of Rectangle 3: " + rectangle3.area());
+
+
     }
 }
 

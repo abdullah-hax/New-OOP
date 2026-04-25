@@ -20,7 +20,7 @@
 
 /* | Real Life       | OOP          |
 | --------------- | ------------ |
-| Account opening | Constructor  |  // cashier er kache etar access thakbena , ar thakleo cashier jdi constructor die balance change kre tahle notun ekta object create hoi jabe, history theke jabe tai cashier kkno eta krbena. but setter thakle cashier easily eta krte parto.
+| Account opening | Constructor  |  // cashier er kache etar access thakbena , ar thakleo cashier jdi constructor die balance change kre tahle notun ekta object create hoi jabe (new object mane new account open), history theke jabe tai cashier kkno eta krbena. but setter thakle cashier easily eta krte parto.
 | Cash deposit    | deposit()    |
 | Cash withdrawal | withdraw()   |
 | Balance check   | getBalance() |
@@ -52,7 +52,7 @@ class BankAccount{
         if(amount > 0){
             balance += amount;
         } else {
-            System.out.println("Invalid deposit amount!");
+            System.out.println("\nInvalid deposit amount!");
         }
         return balance;
     }
@@ -62,7 +62,7 @@ class BankAccount{
         if(amount > 0 && amount <= balance){
             balance -= amount;
         } else {
-            System.out.println("Invalid withdrawal!");
+            throw new IllegalArgumentException("\nInvalid withdrawal");
         }
         return balance;
     }
@@ -77,16 +77,18 @@ public class BankAccMain {
     public static void main(String[] args) {
 
         //@ constructor এর কাজ হল object create করা 
-        BankAccount account1 = new BankAccount("12458907", 12500);  // constructor called, then construcor will create object
-
+        BankAccount account1 = new BankAccount("12458907", -12500);  // constructor called, then construcor will create object, object creation = new account creation
         account1.printStatment();
 
+        System.out.println("\nAfter deposited--------------");
         account1.deposit(5000);
-        account1.withdraw(3000);
-        account1.withdraw(22000); // Invalid withdrawal
-
         account1.printStatment();
 
+        System.out.println("\nAfter withdrawal--------------");
+        account1.withdraw(22000); // Invalid withdrawal
+        account1.printStatment();
+
+        System.out.println("\n--------------------------");
         account1.deposit(0);
         account1.withdraw(0);
     }

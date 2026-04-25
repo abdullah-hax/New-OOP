@@ -47,11 +47,11 @@ class Calculate{
     }
 
     public Calculate(int a, int b){
-        this(a, b, 0);
+        this(a, b, 0);    // calling main constructor
     }
 
     public Calculate(){
-        this(0, 0, 0);
+        this(0, 0, 0);   // calling main constructor
     }
 }
 
@@ -73,4 +73,4 @@ various types of Laptop
 BankAccount
 
 *method overlaoding use krbe esb khettre:
-calculator e various value die addition/division/substraction/mutiplication*/
+calculator objecter various value die addition/division/substraction/mutiplication*/
