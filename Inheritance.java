@@ -16,7 +16,7 @@ class Car extends Vehicle{
     private String brand;
 
     public Car(int speed, String brand){
-        super(speed);
+        super(speed);   // super lekhar karone speed baper kache cole jabe. ar baper sb jinis chele use krte parbe.
         this.brand = brand;
     }
 
@@ -32,16 +32,28 @@ class Car extends Vehicle{
 
 public class Inheritance {
     public static void main(String[] args) {
+       
+        Vehicle vehicle = new Vehicle(90);
+        System.out.println("About Vehicle-------------");
+        System.out.println("Speed: " + vehicle.speed);
+        vehicle.move();
+        
+        
         Car car = new Car(120, "Prado");
-
+        System.out.println("\nAbout Car-------------");
+        // System.out.println("Brand: " + car.brand);
+        System.out.println("Speed: " + car.speed);
         car.move();
         car.honk();
+
+        System.out.println("\nAbout Vehicle-------------");
+        vehicle.move();
     }
 }
 
 
-/* //   ?this() = nij objecter constructor call
-        ?super() = paranter objecter constructor call
+/*       this() = nij classer  constructor call
+         super() = paranter constructor call
 Object obj = new Object(); => 
         ?new Object() = mention kora objecter constructor call */
 
@@ -65,3 +77,28 @@ Object obj = new Object(); =>
     Wheel is a Car ❌
 
 এগুলো has-a, inheritance না। */
+
+
+
+
+
+
+
+
+/* 
+
+public int getSpeed(){
+    if(speed > 200){
+        return 200; // safety cap
+    }
+    return speed;
+}
+
+
+Always keep fields(data/variable) private expose behavior(method).
+
+
+
+*/
+
+
