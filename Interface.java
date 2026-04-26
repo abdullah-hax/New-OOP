@@ -10,18 +10,24 @@ interface Payment {
 
 class Bkash implements Payment {
     public void pay(double amount) {
-        System.out.println("Paid via Bkash");
+        System.out.println(amount + "Tk paid via Bkash");
     }
 }
 
 class Card implements Payment {
     public void pay(double amount) {
-        System.out.println("Paid via Card");
+        System.out.println(amount + "Tk paid via Card");
     }
 }
 
 public class Interface {
+    public static void main(String[] args) {
+        Bkash bkash = new Bkash();
+        bkash.pay(0);
 
+        Card card = new Card();
+        card.pay(1200);
+    }
 }
 
 /* ✔ Interface ব্যবহার করবে যখন:
@@ -42,3 +48,7 @@ Class গুলো একই পরিবারভুক্ত না,
 তাই:
     abstract class ❌ (family লাগে)
     interface ✅ (capability লাগে) */
+
+
+/* Bkash has-a payment(option) / Bkash has-a capability of payment
+   Card has-a payment(option) / Card has-a capability of payment */

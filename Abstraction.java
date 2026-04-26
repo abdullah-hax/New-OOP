@@ -112,3 +112,7 @@ Example: Remote controller, Android, TV, Laptop etc.
 
 
 
+/* cat, cow, dog thaklei to hocce , aladavabe animal dekanor ki drkar? 
+        => tai animal k abstrac kore dilam, tai animal er kno object nai 
+    cat, cow, dog eder sound different , amke eder sound mention krte hobe, tahle aladavabe animal makes sound eta dekanor ki drkar?
+        => tai soundkeo lukie fellam(abstract krlam) */
