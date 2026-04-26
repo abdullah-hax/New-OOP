@@ -1,10 +1,18 @@
 package newOOP;
 
 class Vehicle {
-    protected int speed;
+    private int speed;
 
     public Vehicle(int speed){
         this.speed = speed;
+    }
+
+    public int getSpeed(){
+
+        if(speed > 200){
+            return 200;  // safety cap 
+        }
+        return speed;
     }
 
     public void move(){
@@ -13,10 +21,12 @@ class Vehicle {
 }
 
 class Car extends Vehicle{
+
+    // baper full ongso ekn Car er vetor ache. super(speed) use krle , speed baper ei ongse cole asbe.
     private String brand;
 
     public Car(int speed, String brand){
-        super(speed);   // super lekhar karone speed baper kache cole jabe. ar baper sb jinis chele use krte parbe.
+        super(speed); 
         this.brand = brand;
     }
 
@@ -26,7 +36,7 @@ class Car extends Vehicle{
 
     @Override
     public void move(){
-        System.out.println("Car is moving at speed " + speed);
+        System.out.println("Car is moving at speed " + getSpeed());
     }
 }
 
@@ -35,14 +45,14 @@ public class Inheritance {
        
         Vehicle vehicle = new Vehicle(90);
         System.out.println("About Vehicle-------------");
-        System.out.println("Speed: " + vehicle.speed);
+        System.out.println("Speed: " + vehicle.getSpeed());
         vehicle.move();
         
         
-        Car car = new Car(120, "Prado");
+        Car car = new Car(520, "Prado");
         System.out.println("\nAbout Car-------------");
         // System.out.println("Brand: " + car.brand);
-        System.out.println("Speed: " + car.speed);
+        System.out.println("Speed: " + car.getSpeed());
         car.move();
         car.honk();
 
@@ -79,26 +89,9 @@ Object obj = new Object(); =>
 এগুলো has-a, inheritance না। */
 
 
+/* 🔥 Big OOP principle (remember this)
 
+Fields = private
+Methods = public 
 
-
-
-
-
-/* 
-
-public int getSpeed(){
-    if(speed > 200){
-        return 200; // safety cap
-    }
-    return speed;
-}
-
-
-Always keep fields(data/variable) private expose behavior(method).
-
-
-
-*/
-
-
+Always keep fields(data/variable) private, expose behavior(method) */
