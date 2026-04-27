@@ -30,6 +30,8 @@ public class Interface {
     }
 }
 
+//-----------------------------------------------------------
+
 /* ✔ Interface ব্যবহার করবে যখন:
 
     শুধু ability/capability define করতে চাও
@@ -49,6 +51,16 @@ Class গুলো একই পরিবারভুক্ত না,
     abstract class ❌ (family লাগে)
     interface ✅ (capability লাগে) */
 
+//-----------------------------------------------------------
 
 /* Bkash has-a payment(option) / Bkash has-a capability of payment
    Card has-a payment(option) / Card has-a capability of payment */
+
+//-----------------------------------------------------------
+
+// abstract method thaklei setak override krte hobe. karonn oi method k tumi body dao nai, body to deya lgbe.
+/* interface methods:
+    abstract - must implement(override)
+    default - optional (you can override or not)
+    static - cann't override
+*/

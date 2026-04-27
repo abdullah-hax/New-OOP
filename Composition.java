@@ -22,9 +22,15 @@ class Car {
 }
 
 public class Composition {
+    public static void main(String[] args) {
+        Car car = new Car();  // Car object create krle automatic Engine object create hoye jabe.
+        car.drive();
+        // engine.start();  // eta Car classer vetor engine referrence na, ei referrenceta just ekn bananu hoise, eta kono objectke point krtese na.(kintu Car classer ontrvukto engine referrence Engine objectk point krtesilo)
+    }
 
-}
+} 
 
+//------------------------------------------------------------------
 
 // 👉 এখানে Car Engine-এর মালিক 
 
