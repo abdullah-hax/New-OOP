@@ -20,7 +20,7 @@ class Car{
     }
 
     void drive(){
-        engine.start();
+        engine.start();   // main classer vetor je engine referrence chilo seta ei class e patano hoise. tai main classer ontrvukto engine referrence jake point krtesilo ei classer engine referrence o takei point krtese.
         System.out.println("Car is driving");
     }
 }

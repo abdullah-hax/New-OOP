@@ -7,6 +7,14 @@ class A {
 }
 
 class B extends A {
+
+    // class A {
+    //     void show(int x) {
+    //         System.out.println("A int");
+    //     }
+    // }
+
+
     void show(double x) {
         System.out.println("B double");
     }
@@ -23,4 +31,4 @@ public class magic2 {
 }
 
 // compiler দেখে A reference
-// 10.5 int noi, tai compile time ei erro, runtime e jete parbena.
+// 10.5 int noi, tai compile time ei error, runtime e jete parbena.
