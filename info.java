@@ -34,3 +34,22 @@ package newOOP;
 
 /*  Inheritance + overloading → compile-time polymorphism
     Inheritance + overriding + parent reference → runtime polymorphism */
+    
+
+/* ========= normal variable vs referrence variable | data type vs class type ========================
+
+        int age = 20;
+        int = data type
+        age = variable name
+
+
+        Timer timer = new Timer()
+        Student student = new Student()
+        Timer = class type
+        timer = referrence variable name
+
+
+        normal variable stores assigned value
+        referrence variable stores ram cell no.
+
+*/

@@ -22,7 +22,7 @@ class Vehicle {
 
 class Car extends Vehicle{
 
-    // baper full ongso ekn Car er vetor ache. super(speed) use krle , speed baper ei ongse cole asbe.
+    // baper full ongso ekn Car er vetor copy kora hoise. super(speed) use krle , speed baper copyed ongse cole asbe.
     private String brand;
 
     public Car(int speed, String brand){
@@ -58,14 +58,15 @@ public class Inheritance {
 
         System.out.println("\nAbout Vehicle-------------");
         vehicle.move();
+        System.out.println("Speed: " + vehicle.getSpeed());
     }
 }
 
 
-/*       this() = nij classer  constructor call
-         super() = paranter constructor call
+/*       
 Object obj = new Object(); => 
-        ?new Object() = mention kora objecter constructor call */
+        new Object() = object creation in heap + sei objecter constructor call */
+
 
 /* Inheritance মানে: “A is a B” বলা যায় কি না
 
@@ -95,3 +96,28 @@ Fields = private
 Methods = public 
 
 Always keep fields(data/variable) private, expose behavior(method) */
+
+
+/*  =================== this & super confusion clear ==============
+
+    this = current object:------------
+    this.name (my field)
+    this.add() (my method)
+    this(variables) (my constructor call, this() = Animal())
+
+
+
+    super = parent object (main parent object na , eta "copied parent object" k bujacce):------------------
+    super.name => (parent field)
+    super.add() => (parent method)
+    super(variables) (parent constructor call, super() = Lion())
+
+
+
+    super() (without variables) is called inside child constructor automatically (not outside constructor)
+
+    Important: parent constructor parameterized hole (such as Animal(parameters)) ,child constructor e must super(variables) use krte hobe.
+
+
+
+*/
